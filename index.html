@@ -1,126 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Rose Beauty - Premium skincare products delivered across Morocco.">
-<title>Rose Beauty | Premium Skincare Morocco</title>
+<meta name="description" content="SOUAADÉ BEAUTY - متجر العناية والجمال في المغرب">
+<title>SOUAADÉ BEAUTY | متجر الجمال والعناية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{
-font-family:Arial,Helvetica,sans-serif;
-background:#fffafa;
+font-family:"Cairo",Arial,sans-serif;
+background:#fffafc;
 color:#292329;
-line-height:1.6
+line-height:1.8;
+overflow-x:hidden
 }
 button,input,select,textarea{font:inherit}
 button{cursor:pointer}
 header{
-position:sticky;top:0;z-index:100;
+position:sticky;
+top:0;
+z-index:100;
 background:rgba(255,255,255,.96);
-backdrop-filter:blur(12px);
-border-bottom:1px solid #f1e3e8;
-padding:14px 5%;
+backdrop-filter:blur(15px);
+border-bottom:1px solid #f0e1e7;
+padding:13px 5%;
 display:flex;
 align-items:center;
 justify-content:space-between;
 gap:20px
 }
 .logo{
-font-size:25px;
-font-weight:800;
-color:#c95f83;
-letter-spacing:-1px
+font-family:"Playfair Display",serif;
+font-size:27px;
+font-weight:700;
+color:#bd587c;
+letter-spacing:.5px;
+white-space:nowrap
 }
-.logo span{color:#333}
-nav{display:flex;gap:25px}
+.logo span{color:#292329}
+nav{
+display:flex;
+gap:25px
+}
 nav a{
 text-decoration:none;
 color:#444;
-font-weight:600
+font-weight:600;
+transition:.2s
 }
-nav a:hover{color:#c95f83}
+nav a:hover{color:#bd587c}
 .cart-btn{
 border:0;
 background:#f8dce6;
-color:#9e3f63;
-padding:11px 17px;
+color:#963c60;
+padding:10px 17px;
 border-radius:30px;
-font-weight:700
+font-weight:700;
+white-space:nowrap
 }
 .hero{
-min-height:560px;
+min-height:570px;
 display:flex;
 align-items:center;
 padding:70px 7%;
 background:
-linear-gradient(90deg,rgba(255,250,252,.97),rgba(255,250,252,.55)),
+linear-gradient(270deg,rgba(255,250,252,.97),rgba(255,250,252,.58)),
 url("https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=1800&q=85");
 background-size:cover;
 background-position:center
 }
-.hero-content{max-width:620px}
+.hero-content{
+max-width:650px
+}
 .badge{
 display:inline-block;
 background:#f7dbe5;
 color:#a13e62;
-padding:8px 15px;
+padding:6px 15px;
 border-radius:30px;
-font-size:13px;
-font-weight:bold;
-margin-bottom:18px
+font-size:12px;
+font-weight:700;
+margin-bottom:17px
 }
 .hero h1{
-font-size:clamp(42px,7vw,72px);
-line-height:1.02;
+font-family:"Playfair Display",serif;
+font-size:clamp(43px,7vw,72px);
+line-height:1.15;
 margin-bottom:20px;
-letter-spacing:-3px
+letter-spacing:-1px
 }
-.hero h1 span{color:#c95f83}
+.hero h1 span{color:#bd587c}
 .hero p{
-font-size:19px;
+font-size:18px;
 color:#666;
-max-width:540px;
-margin-bottom:30px
+max-width:570px;
+margin-bottom:28px
 }
 .btn{
 border:0;
-background:#c95f83;
+background:#bd587c;
 color:white;
-padding:14px 24px;
+padding:13px 25px;
 border-radius:30px;
 font-weight:700;
 display:inline-block;
 text-decoration:none;
 transition:.2s
 }
-.btn:hover{transform:translateY(-2px);opacity:.92}
+.btn:hover{
+transform:translateY(-2px);
+opacity:.92
+}
 .section{
 padding:75px 6%;
 max-width:1250px;
 margin:auto
 }
-.section-title{text-align:center;margin-bottom:40px}
-.section-title h2{font-size:36px;margin-bottom:8px}
+.section-title{
+text-align:center;
+margin-bottom:38px
+}
+.section-title h2{
+font-family:"Playfair Display",serif;
+font-size:38px;
+margin-bottom:7px
+}
 .section-title p{color:#777}
 .trust{
 display:grid;
 grid-template-columns:repeat(4,1fr);
 gap:15px;
 padding:30px 6%;
-background:#fff
+background:#fff;
+border-bottom:1px solid #f5e9ed
 }
 .trust-card{
 text-align:center;
 padding:15px
 }
-.trust-card .icon{font-size:28px;margin-bottom:5px}
+.trust-card .icon{
+font-size:28px;
+margin-bottom:4px
+}
 .trust-card h3{font-size:16px}
-.trust-card p{font-size:13px;color:#777}
+.trust-card p{
+font-size:13px;
+color:#777
+}
+.search{
+max-width:520px;
+margin:0 auto 25px;
+display:flex;
+background:#fff;
+border:1px solid #ead7de;
+border-radius:30px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(80,30,50,.04)
+}
+.search input{
+width:100%;
+border:0;
+outline:0;
+padding:13px 18px;
+background:transparent
+}
+.search button{
+border:0;
+background:#f8dce6;
+padding:0 18px
+}
 .filters{
 display:flex;
-gap:10px;
+gap:9px;
 flex-wrap:wrap;
 justify-content:center;
 margin-bottom:30px
@@ -128,35 +183,14 @@ margin-bottom:30px
 .filter{
 border:1px solid #ead7de;
 background:#fff;
-padding:9px 17px;
+padding:8px 17px;
 border-radius:25px;
 cursor:pointer
 }
 .filter.active,.filter:hover{
-background:#c95f83;
+background:#bd587c;
 color:#fff;
-border-color:#c95f83
-}
-.search{
-max-width:500px;
-margin:0 auto 25px;
-display:flex;
-background:#fff;
-border:1px solid #ead7de;
-border-radius:30px;
-overflow:hidden
-}
-.search input{
-width:100%;
-border:0;
-outline:0;
-padding:14px 18px;
-background:transparent
-}
-.search button{
-border:0;
-background:#f8dce6;
-padding:0 18px
+border-color:#bd587c
 }
 .products{
 display:grid;
@@ -169,10 +203,12 @@ border:1px solid #f0e1e6;
 border-radius:20px;
 overflow:hidden;
 box-shadow:0 8px 30px rgba(60,20,40,.06);
-transition:.25s;
-position:relative
+transition:.25s
 }
-.product:hover{transform:translateY(-5px)}
+.product:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 35px rgba(60,20,40,.1)
+}
 .product-img{
 height:280px;
 width:100%;
@@ -186,22 +222,25 @@ font-size:11px;
 font-weight:bold;
 background:#f9e5eb;
 color:#a13e62;
-padding:5px 9px;
+padding:4px 9px;
 border-radius:15px;
+margin-bottom:7px
+}
+.product h3{
+font-size:19px;
+margin-bottom:5px
+}
+.description{
+font-size:13px;
+color:#777;
+min-height:68px;
 margin-bottom:9px
 }
-.product h3{font-size:20px;margin-bottom:6px}
-.description{
-font-size:14px;
-color:#777;
-min-height:67px;
-margin-bottom:10px
-}
 .price{
-font-size:22px;
+font-size:21px;
 font-weight:800;
-color:#c95f83;
-margin-bottom:13px
+color:#bd587c;
+margin-bottom:12px
 }
 .add{
 width:100%;
@@ -212,13 +251,13 @@ padding:12px;
 border-radius:12px;
 font-weight:bold
 }
-.add:hover{background:#c95f83}
+.add:hover{background:#bd587c}
 .details{
-margin-top:12px;
-font-size:13px;
+margin-top:11px;
+font-size:12px;
 color:#777;
 border-top:1px solid #eee;
-padding-top:12px
+padding-top:10px
 }
 .about{
 background:#fff1f5;
@@ -236,8 +275,16 @@ height:450px;
 object-fit:cover;
 border-radius:25px
 }
-.about h2{font-size:40px;line-height:1.1;margin-bottom:18px}
-.about p{color:#666;margin-bottom:15px}
+.about h2{
+font-family:"Playfair Display",serif;
+font-size:42px;
+line-height:1.2;
+margin-bottom:18px
+}
+.about p{
+color:#666;
+margin-bottom:13px
+}
 .features{
 display:grid;
 grid-template-columns:repeat(3,1fr);
@@ -247,30 +294,50 @@ gap:20px
 padding:28px;
 background:#fff;
 border:1px solid #f0e1e6;
-border-radius:20px
+border-radius:20px;
+transition:.2s
+}
+.feature:hover{
+transform:translateY(-3px)
 }
 .feature h3{margin-bottom:8px}
-.feature p{color:#777;font-size:14px}
+.feature p{
+color:#777;
+font-size:14px
+}
 .faq{max-width:850px}
 details{
 background:#fff;
 border:1px solid #eadde2;
-padding:18px 20px;
+padding:17px 20px;
 border-radius:14px;
 margin-bottom:10px
 }
-summary{font-weight:bold;cursor:pointer}
-details p{color:#777;margin-top:10px}
+summary{
+font-weight:bold;
+cursor:pointer
+}
+details p{
+color:#777;
+margin-top:9px
+}
 .newsletter{
 background:#292329;
 color:white;
 text-align:center;
 padding:60px 20px
 }
-.newsletter h2{font-size:32px;margin-bottom:8px}
-.newsletter p{color:#ddd;margin-bottom:20px}
+.newsletter h2{
+font-family:"Playfair Display",serif;
+font-size:34px;
+margin-bottom:7px
+}
+.newsletter p{
+color:#ddd;
+margin-bottom:20px
+}
 .newsletter input{
-padding:14px 18px;
+padding:13px 18px;
 border:0;
 border-radius:30px;
 width:min(350px,80%);
@@ -279,11 +346,28 @@ outline:0
 footer{
 background:#fff;
 border-top:1px solid #eee;
-padding:40px 6%;
+padding:35px 6%;
 text-align:center;
 color:#777
 }
-footer strong{color:#c95f83}
+footer strong{color:#bd587c}
+.whatsapp{
+position:fixed;
+left:18px;
+bottom:18px;
+z-index:150;
+width:58px;
+height:58px;
+border-radius:50%;
+background:#25D366;
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+text-decoration:none;
+box-shadow:0 8px 25px rgba(0,0,0,.2)
+}
 .overlay{
 position:fixed;
 inset:0;
@@ -294,22 +378,24 @@ display:none
 .overlay.show{display:block}
 .cart-panel{
 position:fixed;
-right:0;
+left:0;
 top:0;
 height:100%;
 width:min(430px,100%);
 background:#fff;
 z-index:201;
-transform:translateX(100%);
+transform:translateX(-100%);
 transition:.3s;
 display:flex;
-flex-direction:column
+flex-direction:column;
+box-shadow:10px 0 30px rgba(0,0,0,.1)
 }
 .cart-panel.show{transform:translateX(0)}
 .cart-head{
 padding:20px;
 display:flex;
 justify-content:space-between;
+align-items:center;
 border-bottom:1px solid #eee
 }
 .close{
@@ -319,7 +405,11 @@ width:35px;
 height:35px;
 border-radius:50%
 }
-.cart-items{padding:20px;overflow:auto;flex:1}
+.cart-items{
+padding:20px;
+overflow:auto;
+flex:1
+}
 .cart-item{
 display:flex;
 gap:12px;
@@ -333,7 +423,10 @@ object-fit:cover;
 border-radius:10px
 }
 .cart-item h4{font-size:14px}
-.cart-item p{color:#c95f83;font-weight:bold}
+.cart-item p{
+color:#bd587c;
+font-weight:bold
+}
 .qty{
 display:flex;
 align-items:center;
@@ -383,7 +476,9 @@ overflow:auto;
 border-radius:22px;
 padding:25px
 }
-.checkout-box h2{margin-bottom:20px}
+.checkout-box h2{
+margin-bottom:20px
+}
 .form-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
@@ -397,14 +492,19 @@ font-size:13px;
 font-weight:bold;
 margin-bottom:5px
 }
-.field input,.field select,.field textarea{
+.field input,
+.field select,
+.field textarea{
 width:100%;
 padding:12px;
 border:1px solid #ddd;
 border-radius:10px;
 outline:0
 }
-.field textarea{min-height:80px;resize:vertical}
+.field textarea{
+min-height:80px;
+resize:vertical
+}
 .payment{
 background:#fff6f8;
 padding:13px;
@@ -417,311 +517,528 @@ padding:15px;
 border-radius:12px;
 margin-bottom:15px
 }
-.empty{text-align:center;color:#777;padding:40px 0}
+.empty{
+text-align:center;
+color:#777;
+padding:40px 0
+}
 @media(max-width:900px){
-.products{grid-template-columns:repeat(2,1fr)}
-.trust{grid-template-columns:repeat(2,1fr)}
-.about{grid-template-columns:1fr}
-.features{grid-template-columns:1fr}
+.products{
+grid-template-columns:repeat(2,1fr)
+}
+.trust{
+grid-template-columns:repeat(2,1fr)
+}
+.about{
+grid-template-columns:1fr
+}
+.features{
+grid-template-columns:1fr
+}
 nav{display:none}
 }
 @media(max-width:550px){
-header{padding:13px 4%}
-.logo{font-size:21px}
-.hero{min-height:500px;padding:50px 6%}
-.hero h1{font-size:43px}
-.section{padding:55px 5%}
-.products{grid-template-columns:1fr}
-.trust{grid-template-columns:1fr 1fr;padding:25px 4%}
-.about{padding:45px 6%}
-.about img{height:300px}
-.form-grid{grid-template-columns:1fr}
-.field.full{grid-column:auto}
+header{
+padding:11px 4%;
+gap:8px
+}
+.logo{
+font-size:21px
+}
+.cart-btn{
+padding:8px 11px;
+font-size:12px
+}
+.hero{
+min-height:520px;
+padding:50px 6%
+}
+.hero h1{
+font-size:43px
+}
+.hero p{
+font-size:16px
+}
+.section{
+padding:55px 5%
+}
+.section-title h2{
+font-size:31px
+}
+.products{
+grid-template-columns:1fr
+}
+.product-img{
+height:300px
+}
+.trust{
+grid-template-columns:1fr 1fr;
+padding:25px 4%
+}
+.trust-card{
+padding:10px 4px
+}
+.trust-card h3{
+font-size:13px
+}
+.trust-card p{
+font-size:11px
+}
+.about{
+padding:45px 6%
+}
+.about img{
+height:300px
+}
+.form-grid{
+grid-template-columns:1fr
+}
+.field.full{
+grid-column:auto
+}
+.whatsapp{
+left:15px;
+bottom:15px;
+width:54px;
+height:54px
+}
 }
 </style>
 </head>
 <body>
 <header>
-  <div class="logo">Rose <span>Beauty</span></div>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#products">Shop</a>
-    <a href="#about">About</a>
-    <a href="#faq">FAQ</a>
-  </nav>
-  <button class="cart-btn" onclick="openCart()">🛍 Cart (<span id="cartCount">0</span>)</button>
+<div class="logo">
+SOUAADÉ <span>BEAUTY</span>
+</div>
+<nav>
+<a href="#home">الرئيسية</a>
+<a href="#products">المنتجات</a>
+<a href="#about">من نحن</a>
+<a href="#faq">الأسئلة</a>
+</nav>
+<button class="cart-btn" onclick="openCart()">
+🛍️ السلة (<span id="cartCount">0</span>)
+</button>
 </header>
 <section class="hero" id="home">
-  <div class="hero-content">
-    <span class="badge">PREMIUM SKINCARE • MOROCCO</span>
-    <h1>Your skin deserves to <span>glow.</span></h1>
-    <p>
-      Discover carefully selected skincare essentials designed to make
-      your daily beauty routine simple, gentle and luxurious.
-    </p>
-    <a href="#products" class="btn">Shop Best Sellers →</a>
-  </div>
+<div class="hero-content">
+<span class="badge">عناية وجمال • المغرب 🇲🇦</span>
+<h1>
+جمالك يبدأ من <span>هنا.</span>
+</h1>
+<p>
+اكتشفي مجموعة مختارة من منتجات العناية والجمال،
+واجعلي روتينك اليومي أكثر بساطة وأناقة.
+</p>
+<a href="#products" class="btn">
+اكتشفي منتجاتنا ←
+</a>
+</div>
 </section>
 <section class="trust">
-  <div class="trust-card">
-    <div class="icon">🚚</div>
-    <h3>Delivery Across Morocco</h3>
-    <p>Fast and convenient delivery.</p>
-  </div>
-  <div class="trust-card">
-    <div class="icon">💳</div>
-    <h3>Cash on Delivery</h3>
-    <p>Pay when your order arrives.</p>
-  </div>
-  <div class="trust-card">
-    <div class="icon">✨</div>
-    <h3>Selected Products</h3>
-    <p>Quality-focused skincare.</p>
-  </div>
-  <div class="trust-card">
-    <div class="icon">💗</div>
-    <h3>Customer Support</h3>
-    <p>We're here to help.</p>
-  </div>
+<div class="trust-card">
+<div class="icon">🚚</div>
+<h3>التوصيل داخل المغرب</h3>
+<p>نوصل طلبك إلى مدينتك.</p>
+</div>
+<div class="trust-card">
+<div class="icon">💵</div>
+<h3>الدفع عند الاستلام</h3>
+<p>ادفعي عند وصول الطلب.</p>
+</div>
+<div class="trust-card">
+<div class="icon">✨</div>
+<h3>منتجات مختارة</h3>
+<p>اختيارات للعناية اليومية.</p>
+</div>
+<div class="trust-card">
+<div class="icon">💗</div>
+<h3>خدمة العملاء</h3>
+<p>نحن هنا لمساعدتك.</p>
+</div>
 </section>
 <section class="section" id="products">
-  <div class="section-title">
-    <h2>Shop Our Collection</h2>
-    <p>Simple skincare essentials for your daily routine.</p>
-  </div>
-  <div class="search">
-    <input id="searchInput" type="search" placeholder="Search products..." oninput="renderProducts()">
-    <button>🔍</button>
-  </div>
-  <div class="filters">
-    <button class="filter active" onclick="setCategory('All',this)">All</button>
-    <button class="filter" onclick="setCategory('Serum',this)">Serums</button>
-    <button class="filter" onclick="setCategory('Moisturizer',this)">Moisturizers</button>
-    <button class="filter" onclick="setCategory('Cleanser',this)">Cleansers</button>
-  </div>
-  <div class="products" id="productsGrid"></div>
+<div class="section-title">
+<h2>منتجاتنا</h2>
+<p>
+اختاري ما يناسب روتين العناية الخاص بك
+</p>
+</div>
+<div class="search">
+<input
+id="searchInput"
+type="search"
+placeholder="ابحثي عن منتج..."
+oninput="renderProducts()">
+<button>🔍</button>
+</div>
+<div class="filters">
+<button class="filter active" onclick="setCategory('All',this)">
+الكل
+</button>
+<button class="filter" onclick="setCategory('Serum',this)">
+السيرومات
+</button>
+<button class="filter" onclick="setCategory('Moisturizer',this)">
+المرطبات
+</button>
+<button class="filter" onclick="setCategory('Cleanser',this)">
+غسول الوجه
+</button>
+</div>
+<div class="products" id="productsGrid"></div>
 </section>
 <section class="about" id="about">
-  <div>
-    <span class="badge">ABOUT ROSE BEAUTY</span>
-    <h2>Beauty made simple.</h2>
-    <p>
-      Rose Beauty is an online skincare store created for people who want
-      a simple and enjoyable beauty routine.
-    </p>
-    <p>
-      We focus on practical skincare products and a smooth shopping
-      experience, with delivery available across Morocco.
-    </p>
-    <a href="#products" class="btn">Explore Products</a>
-  </div>
-  <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=1000&q=85" alt="Skincare products">
+<div>
+<span class="badge">عن SOUAADÉ BEAUTY</span>
+<h2>
+جمالك... بطريقتك
+</h2>
+<p>
+SOUAADÉ BEAUTY هو متجر إلكتروني يهتم بمنتجات
+العناية والجمال ويهدف إلى تقديم تجربة شراء بسيطة وأنيقة.
+</p>
+<p>
+نختار منتجاتنا بعناية ونوفر لك تجربة طلب سهلة
+مع إمكانية الدفع عند الاستلام والتوصيل داخل المغرب.
+</p>
+<a href="#products" class="btn">
+تصفحي المنتجات
+</a>
+</div>
+<img
+src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=1000&q=85"
+alt="منتجات العناية والجمال">
 </section>
 <section class="section">
-  <div class="section-title">
-    <h2>Why Rose Beauty?</h2>
-    <p>Everything you need for a better shopping experience.</p>
-  </div>
-  <div class="features">
-    <div class="feature">
-      <h3>🌸 Carefully Selected</h3>
-      <p>We select products with your everyday skincare routine in mind.</p>
-    </div>
-    <div class="feature">
-      <h3>📦 Easy Ordering</h3>
-      <p>Add your favorite products to the cart and complete your order in a few steps.</p>
-    </div>
-    <div class="feature">
-      <h3>🇲🇦 Made for Morocco</h3>
-      <p>Prices are displayed in Moroccan dirhams and ordering is designed for local delivery.</p>
-    </div>
-  </div>
+<div class="section-title">
+<h2>لماذا SOUAADÉ BEAUTY؟</h2>
+<p>
+لأن تجربة الشراء مهمة مثل المنتج نفسه
+</p>
+</div>
+<div class="features">
+<div class="feature">
+<h3>🌸 منتجات مختارة</h3>
+<p>
+نحرص على اختيار منتجات مناسبة لروتين
+العناية اليومي.
+</p>
+</div>
+<div class="feature">
+<h3>📦 طلب سهل</h3>
+<p>
+اختاري المنتجات وأضيفيها إلى السلة
+ثم أرسلي طلبك بسهولة.
+</p>
+</div>
+<div class="feature">
+<h3>🇲🇦 متجر مغربي</h3>
+<p>
+الأسعار بالدرهم المغربي والتوصيل
+متاح داخل المغرب.
+</p>
+</div>
+</div>
 </section>
 <section class="section faq" id="faq">
-  <div class="section-title">
-    <h2>Frequently Asked Questions</h2>
-    <p>Everything you need to know before ordering.</p>
-  </div>
-  <details>
-    <summary>Do you deliver across Morocco?</summary>
-    <p>Yes. Delivery is available across Morocco. Delivery fees can depend on the city.</p>
-  </details>
-  <details>
-    <summary>Can I pay when I receive my order?</summary>
-    <p>Yes. Cash on delivery is available for orders submitted through the website.</p>
-  </details>
-  <details>
-    <summary>How do I place an order?</summary>
-    <p>Add your products to the cart, enter your contact and delivery information, then submit the order.</p>
-  </details>
-  <details>
-    <summary>Are these products suitable for every skin type?</summary>
-    <p>Not necessarily. Always check the product information and ingredients, and choose products according to your individual skin needs.</p>
-  </details>
+<div class="section-title">
+<h2>الأسئلة الشائعة</h2>
+<p>
+أهم المعلومات قبل إتمام طلبك
+</p>
+</div>
+<details>
+<summary>
+هل التوصيل متوفر داخل المغرب؟
+</summary>
+<p>
+نعم، نوفر التوصيل داخل المغرب، وقد تختلف
+مصاريف التوصيل حسب المدينة.
+</p>
+</details>
+<details>
+<summary>
+هل يمكنني الدفع عند الاستلام؟
+</summary>
+<p>
+نعم، يمكنك الدفع عند استلام طلبك.
+</p>
+</details>
+<details>
+<summary>
+كيف يمكنني تقديم طلب؟
+</summary>
+<p>
+أضيفي المنتجات إلى السلة، ثم أدخلي معلومات
+التوصيل واضغطي على تأكيد الطلب.
+</p>
+</details>
+<details>
+<summary>
+كيف أتواصل مع المتجر؟
+</summary>
+<p>
+يمكنك التواصل معنا مباشرة عبر واتساب
+من خلال الزر الموجود أسفل الموقع.
+</p>
+</details>
 </section>
 <section class="newsletter">
-  <h2>Join Rose Beauty</h2>
-  <p>Get updates about new products and special offers.</p>
-  <input type="email" placeholder="Your email address">
+<h2>
+تابعي جديد SOUAADÉ BEAUTY
+</h2>
+<p>
+كوني أول من يعرف المنتجات والعروض الجديدة.
+</p>
+<input
+type="email"
+placeholder="البريد الإلكتروني">
 </section>
 <footer>
-  <p>© 2026 <strong>Rose Beauty</strong> — All Rights Reserved</p>
-  <p>Premium Skincare • Morocco</p>
+<p>
+© 2026 <strong>SOUAADÉ BEAUTY</strong> — جميع الحقوق محفوظة
+</p>
+<p>
+الجمال والعناية • المغرب 🇲🇦
+</p>
 </footer>
-<div class="overlay" id="overlay" onclick="closeCart()"></div>
+<a
+class="whatsapp"
+href="https://wa.me/212784611930"
+target="_blank"
+aria-label="واتساب">
+💬
+</a>
+<div
+class="overlay"
+id="overlay"
+onclick="closeCart()">
+</div>
 <div class="cart-panel" id="cartPanel">
-  <div class="cart-head">
-    <h2>Your Cart</h2>
-    <button class="close" onclick="closeCart()">✕</button>
-  </div>
-  <div class="cart-items" id="cartItems"></div>
-  <div class="cart-bottom">
-    <div class="total">
-      <span>Total</span>
-      <span id="cartTotal">0 MAD</span>
-    </div>
-    <button class="btn" style="width:100%" onclick="openCheckout()">Continue to Checkout</button>
-  </div>
+<div class="cart-head">
+<h2>سلة المشتريات</h2>
+<button class="close" onclick="closeCart()">
+✕
+</button>
+</div>
+<div class="cart-items" id="cartItems"></div>
+<div class="cart-bottom">
+<div class="total">
+<span>المجموع</span>
+<span id="cartTotal">
+0 MAD
+</span>
+</div>
+<button
+class="btn"
+style="width:100%"
+onclick="openCheckout()">
+متابعة الطلب
+</button>
+</div>
 </div>
 <div class="checkout" id="checkout">
-  <div class="checkout-box">
-    <div style="display:flex;justify-content:space-between;align-items:center">
-      <h2>Complete Your Order</h2>
-      <button class="close" onclick="closeCheckout()">✕</button>
-    </div>
-    <div class="order-summary">
-      <strong>Order total:</strong>
-      <span id="checkoutTotal">0 MAD</span>
-    </div>
-    <div class="form-grid">
-      <div class="field">
-        <label>Full Name *</label>
-        <input id="name" type="text" placeholder="Your full name">
-      </div>
-      <div class="field">
-        <label>Phone *</label>
-        <input id="phone" type="tel" placeholder="06XXXXXXXX">
-      </div>
-      <div class="field">
-        <label>City *</label>
-        <select id="city">
-          <option value="">Select city</option>
-          <option>Casablanca</option>
-          <option>Rabat</option>
-          <option>Marrakech</option>
-          <option>Fes</option>
-          <option>Tangier</option>
-          <option>Agadir</option>
-          <option>Meknes</option>
-          <option>Oujda</option>
-          <option>Kenitra</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="field">
-        <label>Address *</label>
-        <input id="address" type="text" placeholder="Street, neighborhood...">
-      </div>
-      <div class="field full">
-        <label>Additional note</label>
-        <textarea id="note" placeholder="Optional note about your order"></textarea>
-      </div>
-    </div>
-    <div class="payment">
-      💵 <strong>Cash on Delivery</strong><br>
-      <small>You pay when your order is delivered.</small>
-    </div>
-    <button class="btn" style="width:100%" onclick="submitOrder()">
-      Confirm Order
-    </button>
-  </div>
+<div class="checkout-box">
+<div style="display:flex;justify-content:space-between;align-items:center">
+<h2>
+إتمام الطلب
+</h2>
+<button class="close" onclick="closeCheckout()">
+✕
+</button>
+</div>
+<div class="order-summary">
+<strong>
+مجموع الطلب:
+</strong>
+<span id="checkoutTotal">
+0 MAD
+</span>
+</div>
+<div class="form-grid">
+<div class="field">
+<label>
+الاسم الكامل *
+</label>
+<input
+id="name"
+type="text"
+placeholder="اكتب اسمك الكامل">
+</div>
+<div class="field">
+<label>
+رقم الهاتف *
+</label>
+<input
+id="phone"
+type="tel"
+placeholder="06XXXXXXXX">
+</div>
+<div class="field">
+<label>
+المدينة *
+</label>
+<select id="city">
+<option value="">
+اختر المدينة
+</option>
+<option>الدار البيضاء</option>
+<option>الرباط</option>
+<option>مراكش</option>
+<option>فاس</option>
+<option>طنجة</option>
+<option>أكادير</option>
+<option>مكناس</option>
+<option>وجدة</option>
+<option>القنيطرة</option>
+<option>أخرى</option>
+</select>
+</div>
+<div class="field">
+<label>
+العنوان *
+</label>
+<input
+id="address"
+type="text"
+placeholder="الحي، الشارع...">
+</div>
+<div class="field full">
+<label>
+ملاحظة إضافية
+</label>
+<textarea
+id="note"
+placeholder="ملاحظة اختيارية">
+</textarea>
+</div>
+</div>
+<div class="payment">
+💵 <strong>
+الدفع عند الاستلام
+</strong>
+<br>
+<small>
+ستدفع عند وصول الطلب.
+</small>
+</div>
+<button
+class="btn"
+style="width:100%"
+onclick="submitOrder()">
+تأكيد الطلب عبر واتساب
+</button>
+</div>
 </div>
 <script>
-const products = [
+const products=[
 {
 id:1,
-name:"Hydrating Hyaluronic Serum",
+name:"سيروم حمض الهيالورونيك المرطب",
 category:"Serum",
 price:149,
 image:"https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=900&q=85",
-description:"A lightweight hydrating serum designed to help skin feel softer, smoother and more comfortable.",
-details:"30ml • Hydration • Daily skincare"
+description:"سيروم خفيف يساعد على ترطيب البشرة ومنحها إحساساً بالنعومة والراحة.",
+details:"30ml • ترطيب • للعناية اليومية"
 },
 {
 id:2,
-name:"Vitamin C Brightening Serum",
+name:"سيروم فيتامين C للإشراقة",
 category:"Serum",
 price:179,
 image:"https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=900&q=85",
-description:"A daily serum formulated to support a brighter-looking and more even-looking complexion.",
-details:"30ml • Brightening routine • Daily use"
+description:"سيروم للاستخدام اليومي يساعد على منح البشرة مظهراً أكثر إشراقاً وحيوية.",
+details:"30ml • إشراقة • روتين يومي"
 },
 {
 id:3,
-name:"Daily Face Moisturizer",
+name:"مرطب الوجه اليومي",
 category:"Moisturizer",
 price:129,
 image:"https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=900&q=85",
-description:"A lightweight moisturizer for everyday skincare that helps leave skin feeling soft and hydrated.",
-details:"50ml • Moisturizing • Daily use"
+description:"مرطب خفيف للعناية اليومية يساعد على ترك البشرة ناعمة ومرطبة.",
+details:"50ml • ترطيب • استخدام يومي"
 },
 {
 id:4,
-name:"Gentle Face Cleanser",
+name:"غسول الوجه اللطيف",
 category:"Cleanser",
 price:99,
 image:"https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=900&q=85",
-description:"A gentle cleanser designed to remove everyday impurities while keeping your routine simple.",
-details:"150ml • Cleansing • Daily routine"
+description:"غسول لطيف يساعد على تنظيف البشرة من الشوائب اليومية بطريقة بسيطة.",
+details:"150ml • تنظيف • روتين يومي"
 },
 {
 id:5,
-name:"Rose Hydration Cream",
+name:"كريم الورد المرطب",
 category:"Moisturizer",
 price:139,
 image:"https://images.unsplash.com/photo-1570194065650-d99fb4bedf0a?auto=format&fit=crop&w=900&q=85",
-description:"A nourishing cream for a comfortable, soft and fresh-looking skincare finish.",
-details:"50ml • Nourishing • Daily use"
+description:"كريم مغذي يمنح البشرة إحساساً بالنعومة والراحة ومظهراً منتعشاً.",
+details:"50ml • تغذية • استخدام يومي"
 },
 {
 id:6,
-name:"Glow Essentials Serum",
+name:"سيروم جلو للعناية بالبشرة",
 category:"Serum",
 price:159,
 image:"https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=900&q=85",
-description:"An easy-to-use serum that fits beautifully into a simple morning or evening skincare routine.",
-details:"30ml • Glow routine • Daily use"
+description:"سيروم خفيف يمكن إضافته إلى روتين العناية الصباحي أو المسائي.",
+details:"30ml • عناية • روتين يومي"
 }
 ];
-let cart = [];
-let category = "All";
+let cart=[];
+let category="All";
 function setCategory(value,button){
 category=value;
-document.querySelectorAll(".filter").forEach(b=>b.classList.remove("active"));
+document.querySelectorAll(".filter")
+.forEach(b=>b.classList.remove("active"));
 button.classList.add("active");
 renderProducts();
 }
 function renderProducts(){
 const grid=document.getElementById("productsGrid");
-const search=document.getElementById("searchInput").value.toLowerCase();
+const search=document
+.getElementById("searchInput")
+.value
+.toLowerCase();
 let filtered=products.filter(p=>{
-return (category==="All" || p.category===category) &&
-(p.name.toLowerCase().includes(search) || p.description.toLowerCase().includes(search));
+return(
+category==="All" ||
+p.category===category
+)&&(
+p.name.toLowerCase().includes(search) ||
+p.description.toLowerCase().includes(search)
+);
 });
 if(filtered.length===0){
-grid.innerHTML='<div class="empty" style="grid-column:1/-1">No products found.</div>';
+grid.innerHTML=
+'<div class="empty" style="grid-column:1/-1">لم يتم العثور على منتجات.</div>';
 return;
 }
 grid.innerHTML=filtered.map(p=>`
 <div class="product">
-<img class="product-img" src="${p.image}" alt="${p.name}">
+<img
+class="product-img"
+src="${p.image}"
+alt="${p.name}">
 <div class="product-info">
-<span class="tag">${p.category}</span>
+<span class="tag">
+${p.category==="Serum"?"سيروم":
+p.category==="Moisturizer"?"مرطب":"غسول"}
+</span>
 <h3>${p.name}</h3>
-<p class="description">${p.description}</p>
-<div class="price">${p.price} MAD</div>
-<button class="add" onclick="addToCart(${p.id})">
-Add to Cart
+<p class="description">
+${p.description}
+</p>
+<div class="price">
+${p.price} MAD
+</div>
+<button
+class="add"
+onclick="addToCart(${p.id})">
+أضف إلى السلة 🛍️
 </button>
 <div class="details">
 ${p.details}
@@ -746,27 +1063,43 @@ document.getElementById("cartCount").textContent=
 cart.reduce((sum,p)=>sum+p.qty,0);
 const container=document.getElementById("cartItems");
 if(cart.length===0){
-container.innerHTML='<div class="empty">Your cart is empty 🛍️</div>';
+container.innerHTML=
+'<div class="empty">السلة فارغة 🛍️</div>';
 }else{
 container.innerHTML=cart.map(p=>`
 <div class="cart-item">
-<img src="${p.image}" alt="${p.name}">
+<img
+src="${p.image}"
+alt="${p.name}">
 <div style="flex:1">
 <h4>${p.name}</h4>
-<p>${p.price*p.qty} MAD</p>
+<p>
+${p.price*p.qty} MAD
+</p>
 <div class="qty">
-<button onclick="changeQty(${p.id},-1)">−</button>
+<button onclick="changeQty(${p.id},-1)">
+−
+</button>
 <span>${p.qty}</span>
-<button onclick="changeQty(${p.id},1)">+</button>
-<button class="remove" onclick="removeItem(${p.id})">Remove</button>
+<button onclick="changeQty(${p.id},1)">
++
+</button>
+<button
+class="remove"
+onclick="removeItem(${p.id})">
+حذف
+</button>
 </div>
 </div>
 </div>
 `).join("");
 }
-const total=cart.reduce((sum,p)=>sum+(p.price*p.qty),0);
-document.getElementById("cartTotal").textContent=total+" MAD";
-document.getElementById("checkoutTotal").textContent=total+" MAD";
+const total=
+cart.reduce((sum,p)=>sum+(p.price*p.qty),0);
+document.getElementById("cartTotal")
+.textContent=total+" MAD";
+document.getElementById("checkoutTotal")
+.textContent=total+" MAD";
 }
 function changeQty(id,amount){
 const item=cart.find(p=>p.id===id);
@@ -782,58 +1115,82 @@ cart=cart.filter(p=>p.id!==id);
 updateCart();
 }
 function openCart(){
-document.getElementById("cartPanel").classList.add("show");
-document.getElementById("overlay").classList.add("show");
+document.getElementById("cartPanel")
+.classList.add("show");
+document.getElementById("overlay")
+.classList.add("show");
 }
 function closeCart(){
-document.getElementById("cartPanel").classList.remove("show");
-document.getElementById("overlay").classList.remove("show");
+document.getElementById("cartPanel")
+.classList.remove("show");
+document.getElementById("overlay")
+.classList.remove("show");
 }
 function openCheckout(){
 if(cart.length===0){
-alert("Your cart is empty.");
+alert("السلة فارغة.");
 return;
 }
 closeCart();
-document.getElementById("checkout").classList.add("show");
+document.getElementById("checkout")
+.classList.add("show");
 }
 function closeCheckout(){
-document.getElementById("checkout").classList.remove("show");
+document.getElementById("checkout")
+.classList.remove("show");
 }
 function submitOrder(){
-const name=document.getElementById("name").value.trim();
-const phone=document.getElementById("phone").value.trim();
-const city=document.getElementById("city").value;
-const address=document.getElementById("address").value.trim();
+const name=document
+.getElementById("name")
+.value.trim();
+const phone=document
+.getElementById("phone")
+.value.trim();
+const city=document
+.getElementById("city")
+.value;
+const address=document
+.getElementById("address")
+.value.trim();
 if(!name || !phone || !city || !address){
-alert("Please complete all required fields.");
+alert("المرجو إكمال المعلومات المطلوبة.");
 return;
 }
 if(!/^0[5-7][0-9]{8}$/.test(phone)){
-alert("Please enter a valid Moroccan phone number.");
+alert("المرجو إدخال رقم هاتف مغربي صحيح.");
 return;
 }
-const total=cart.reduce((sum,p)=>sum+(p.price*p.qty),0);
-let message="Hello Rose Beauty! I would like to place an order.%0A%0A";
+const total=
+cart.reduce((sum,p)=>sum+(p.price*p.qty),0);
+let message=
+"السلام عليكم SOUAADÉ BEAUTY، أريد تأكيد هذا الطلب:%0A%0A";
 cart.forEach(p=>{
 message+=encodeURIComponent(
-p.name+" x"+p.qty+" = "+(p.price*p.qty)+" MAD"
+p.name+" × "+p.qty+" = "+(p.price*p.qty)+" MAD"
 )+"%0A";
 });
-message+="%0A"+encodeURIComponent("Total: "+total+" MAD");
-message+="%0A"+encodeURIComponent("Name: "+name);
-message+="%0A"+encodeURIComponent("Phone: "+phone);
-message+="%0A"+encodeURIComponent("City: "+city);
-message+="%0A"+encodeURIComponent("Address: "+address);
-const note=document.getElementById("note").value.trim();
+message+="%0A"+
+encodeURIComponent("المجموع: "+total+" MAD");
+message+="%0A"+
+encodeURIComponent("الاسم: "+name);
+message+="%0A"+
+encodeURIComponent("الهاتف: "+phone);
+message+="%0A"+
+encodeURIComponent("المدينة: "+city);
+message+="%0A"+
+encodeURIComponent("العنوان: "+address);
+const note=document
+.getElementById("note")
+.value.trim();
 if(note){
-message+="%0A"+encodeURIComponent("Note: "+note);
+message+="%0A"+
+encodeURIComponent("ملاحظة: "+note);
 }
-alert("Your order is ready. We will contact you to confirm delivery.");
-cart=[];
-updateCart();
-closeCheckout();
-window.open("https://wa.me/?text="+message,"_blank");
+const whatsappNumber="212784611930";
+window.open(
+"https://wa.me/"+whatsappNumber+"?text="+message,
+"_blank"
+);
 }
 renderProducts();
 updateCart();
